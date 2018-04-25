@@ -1,0 +1,1 @@
+EvokeApi::Application.config.secret_key_base = 'e388961e646a99bbed420554b2fa2837210db1c260e2ff9dfb1dcf755b2471696435c8e15ad20ba1c17dce4cf753d94c840a438da70ee9054f0bed34c4210244'
