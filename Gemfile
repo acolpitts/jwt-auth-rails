@@ -15,6 +15,8 @@ gem 'puma', '~> 3.11'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# Use ActiveModel serializers
+gem 'active_model_serializers', '~> 0.10.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -31,16 +33,19 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use JWT ()Json Web Tokens) for authentication
 gem 'jwt'
 
+# Use will_paginate for pagination
+gem 'will_paginate', '~> 3.1.0'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'faker'
 end
 
 group :test do
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'faker'
   gem 'database_cleaner'
 end
 
